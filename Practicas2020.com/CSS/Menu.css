@@ -41,13 +41,13 @@ ul > li:hover > a
 {
 	position: relative;
 	margin: auto;
-	width: 840px;
+	width: 55%;
 }
 
 #menu > li
 {
 	float: left;
-	width: 200px;
+	width: 25%;
 }
 
 #seleccionado

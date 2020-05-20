@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Practicas 2020</title>
+	<link rel="stylesheet" type="text/css" href="CSS/Menu.css">
+	<link rel="stylesheet" type="text/css" href="CSS/General.css">
+	<link rel="icon" href="IMG/Practicas.png" type="image/gif" sizes="16x16">
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Mogra&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+
+	<script type="text/javascript">
+		function tamano(div)
+		{
+			if (document.getElementById(div).style.opacity != 0)
+			{
+				document.getElementById(div).style.height = '0';
+				document.getElementById(div).style.padding = '0';
+				document.getElementById(div).style.opacity = '0';
+				document.getElementById(div).style.marginTop = '0';
+				document.getElementById(div).style.zIndex = '-1';
+			}
+			else if (document.getElementById(div).style.opacity == 0)
+			{
+				document.getElementById(div).style.zIndex = '0';
+				document.getElementById(div).style.height = '40px';
+				document.getElementById(div).style.padding = '10px';
+				document.getElementById(div).style.opacity = '100';
+				document.getElementById(div).style.marginTop = '10px';
+			}
+		}
+
+		function instalacion(div)
+		{
+			if (document.getElementById(div).style.opacity != 0)
+			{
+				document.getElementById(div).style.height = '0';
+				document.getElementById(div).style.padding = '0';
+				document.getElementById(div).style.opacity = '0';
+				document.getElementById(div).style.marginTop = '0';
+				document.getElementById(div).style.zIndex = '-1';
+			}
+			else if (document.getElementById(div).style.opacity == 0)
+			{
+				document.getElementById(div).style.zIndex = '0';
+				document.getElementById(div).style.height = '57px';
+				document.getElementById(div).style.padding = '10px';
+				document.getElementById(div).style.opacity = '100';
+				document.getElementById(div).style.marginTop = '10px';
+			}
+		}
+	</script>
+</head>
+<body>
+	<div id="divmenu">
+		<ul id="menu">
+			<li><a href="Index.html" id="izc">Inicio</a></li>
+			<li><a href="Git.html">Git</a></li>
+			<li><a href="GitHub.html">GitHub</a></li>
+			<li><a href="Biografia.html" id="der">Biografia</a></li>
+		</ul>
+	</div>
+
+	<div id="div1">
+		<img src="IMG/GitHub.png">
+	</div>
+	<div id="div2">
+		<h3>Información</h3>
+		
+		<br>
+
+		<div id="instalacion" class="opcion" onclick="instalacion('comando')">
+			<h2>Instalacion</h2>
+			<div id="comando" class="comando">
+				<p>1. Te diriges a <a href="https://desktop.github.com/" style="text-decoration: none;">este link</a></p>
+				<p>2. Descargas el instalador</a></p>
+				<p>3. Ejecutas el instalador</a></p>
+			</div>
+		</div>
+		
+		<br>
+
+		<div id="opcion1" class="opcion" onclick="instalacion('comando1')">
+			<h2>Crear un repositorio</h2>
+			<div id="comando1" class="comando">
+				<p>1. Te diriges a tu usuario de GitHub</p>
+				<p>2. Seleccionas new</p>
+				<p>3. Pones nombre y descripcion y eliges si es publica o privada</p>
+			</div>
+		</div>
+		
+		<br>
+
+		<div id="opcion8" class="opcion" onclick="tamano('comando8')">
+			<h2>Master</h2>
+			<div id="comando8" class="comando">
+				<p>La rama master es la rama con la que se comienza en cualquier proyecto, y es la que se utiliza como rama principal donde se encuentra el proyecto en su estado final. Este comando crea una rama con el nombre que elijas</p>
+			</div>
+		</div>
+		
+		<br>
+
+		<div id="opcion9" class="opcion" onclick="tamano('comando9')">
+			<h2>Gitignore</h2>
+			<div id="comando9" class="comando">
+				<p>Es un tipo de extension que se utiliza para ignorar ciertos archivos o extensiones que tu especifiques</p>
+			</div>
+		</div>
+		
+		<br>
+		<br>
+
+		<h3>Comandos</h3>
+		
+		<br>
+
+		<div id="opcion4" class="opcion" onclick="tamano('comando4')">
+			<h2>Clonar repositorio remoto en local</h2>
+			<div id="comando4" class="comando">
+				<p>git clone + url repositorio remoto</p>
+			</div>
+		</div>
+		
+		<br>
+
+		<div id="opcion2" class="opcion" onclick="tamano('comando2')">
+			<h2>Subir repositorio local a repositorio remoto</h2>
+			<div id="comando2" class="comando">
+				<p>git remote add origin + url </p>
+				<p>git push -u origin master</p>
+			</div>
+		</div>
+		
+		<br>
+
+		<div id="opcion3" class="opcion" onclick="instalacion('comando3')">
+			<h2>Descargar repositorio remoto en repositorio local</h2>
+			<div id="comando3" class="comando">
+				<p>git pull</p>
+				<p>o</p>
+				<p>git pull + url repositorio remoto</p>
+			</div>
+		</div>
+		
+		<br>
+
+	</div>
+</body>
+</html>
