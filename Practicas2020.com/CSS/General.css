@@ -1,0 +1,18 @@
+body
+{
+	width: 97vw;
+	height: 97vh;
+
+	background: rgb(30,144,255);
+	background: -moz-radial-gradient(center, ellipse cover, rgb(30,144,255) 0%, rgb(70,130,180) 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgb(30,144,255)), color-stop(100%, rgb(70,130,180)));
+	background: -webkit-radial-gradient(center, ellipse cover, rgb(30,144,255) 0%, rgb(70,130,180) 100%);
+	background: -o-radial-gradient(center, ellipse cover, rgb(30,144,255) 0%, rgb(70,130,180) 100%);
+	background: -ms-radial-gradient(center, ellipse cover, rgb(30,144,255) 0%, rgb(70,130,180) 100%);
+	background: radial-gradient(ellipse at center, rgb(30,144,255) 0%, rgb(70,130,180) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e90ff', endColorstr='#4682b4', GradientType=1 );
+
+	/*background: ghostwhite;*/
+
+	overflow-x: hidden;
+}

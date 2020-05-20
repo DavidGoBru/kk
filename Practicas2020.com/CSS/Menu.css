@@ -1,0 +1,56 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+#divmenu
+{
+	height: 60px;
+	width: 100vw;
+	background: ghostwhite;
+	padding: 10px 0 0 0;
+}
+
+ul
+{
+	list-style: none;
+}
+
+ul > li > a
+{
+	padding: 12.5px 10px 7.5px 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: ghostwhite;
+	text-decoration: none;
+	color: initial;
+	border: solid 3.5px ghostwhite;
+	font-family: Mogra;
+	font-size: 20px;
+	border-radius: 7.5px;
+}
+
+ul > li:hover > a
+{
+	background: silver;
+}
+
+#menu
+{
+	position: relative;
+	margin: auto;
+	width: 840px;
+}
+
+#menu > li
+{
+	float: left;
+	width: 200px;
+}
+
+#seleccionado
+{
+	background: red;
+}
