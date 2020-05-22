@@ -55,6 +55,11 @@ body
 	border-radius: 6px;
 }
 
+.opcion:hover
+{
+	cursor: pointer;
+}
+
 .opcion h2
 {
 	font-family: Fredoka one;

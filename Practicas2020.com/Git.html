@@ -50,6 +50,26 @@
 				document.getElementById(div).style.marginTop = '10px';
 			}
 		}
+
+		function tamano2(div)
+		{
+			if (document.getElementById(div).style.opacity != 0)
+			{
+				document.getElementById(div).style.height = '0';
+				document.getElementById(div).style.padding = '0';
+				document.getElementById(div).style.opacity = '0';
+				document.getElementById(div).style.marginTop = '0';
+				document.getElementById(div).style.zIndex = '-1';
+			}
+			else if (document.getElementById(div).style.opacity == 0)
+			{
+				document.getElementById(div).style.zIndex = '0';
+				document.getElementById(div).style.height = '200px';
+				document.getElementById(div).style.padding = '10px';
+				document.getElementById(div).style.opacity = '100';
+				document.getElementById(div).style.marginTop = '10px';
+			}
+		}
 	</script>
 </head>
 <body>
@@ -96,7 +116,28 @@
 				<p>Es un tipo de extension que se utiliza para ignorar ciertos archivos o extensiones que tu especifiques</p>
 			</div>
 		</div>
+
+		<br>
+
+		<div id="opcion12" class="opcion" onclick="tamano2('comando12')">
+			<h2>Que son las ramas</h2>
+			<div id="comando12" class="comando">
+				<img src="IMG/Ramas.png" style="height: 100%; float: left;">
+				<p>Se trata de una bifurcación del estado del código que crea un nuevo camino de cara a la evolución del código, en paralelo a otras ramas que se puedan generar.</p>
+				<br>
+				<p>Por defecto, la rama principal se llama master, y de ella pueden surgir 1 o varias ramas.</p>
+			</div>
+		</div>
 		
+		<br>
+
+		<div id="opcion11" class="opcion" onclick="tamano('comando11')">
+			<h2>Para que sirven las ramas</h2>
+			<div id="comando11" class="comando">
+				<p>Las ramas nos pueden servir por ejemplo para la creación de una funcionalidad que queramos integrar en un programa y para la cual no queremos que la rama principal se vea afectada.</p>
+			</div>
+		</div>
+
 		<br>
 		<br>
 
